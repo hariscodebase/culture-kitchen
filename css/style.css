@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@500&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0px;
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.ck-container {
+    margin-bottom: 1em;
+}
+
+.top-container {
+    background-image: url(../images/home-page/cooking-fire.jpg);
+}
+
+/* opacity containers */
+
+.top-opacity {
+    background: rgba(110, 13, 13, 0.4);
+}
+
+.main-opacity {
+    background: #000000e0;
+}
+
+.ck-line {
+    width: 200px;
+    height: 20px;
+    padding: 1em
+}
+
+.ck-heading {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 3em 2em 0.5em 2em;
+    font-size: 3em;
+    font-family: 'Cormorant Upright', serif;
+}
+
+.ck-desc {
+    padding: 1em 4em;
+    font-size: 1.25em;
+    font-family: 'Cormorant Upright', serif;
+}
+
+
+header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0px;
+}
+
+.top-nav li {
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-items: center;
+}
+
+.logo-div {
+    flex: 1 0 0;
+}
+
+.nav-div {
+    flex: 2 0 0;
+}
+
+.make-reservation-div {
+    flex: 1 0 0;
+}
+
+.ck-logo-link {
+    display: inline-block;
+}
+
+.ck-logo-svg {
+    pointer-events: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu a {
+    padding: 1em 1em;
+    border-radius: 4px;
+    font-size: 110%;
+}
+
+.menu-link:hover {
+    background-color: #ffffff;
+    color: #9b1f1f;
+
+}
+
+.dark-btn {
+    border: 0.1em solid #FFFFFF;
+    padding: 0.75em 1.2em;
+    border-radius: 0.12em;
+    font-weight: 300;
+}
+
+.dark-btn:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.banner {
+    padding-top: 3em;
+    padding-bottom: 12em;
+}
+
+.banner>h1 {
+    padding: 1em 5em;
+    font-size: 4em;
+    font-family: 'Cormorant Upright', serif;
+}
+
+.light-btn {
+    border: 0.1em solid #FFFFFF;
+    background-color: #FFFFFF;
+    color: #330907;
+    padding: 0.75em 1.2em;
+    border-radius: 0.12em;
+    font-weight: 300;
+    font-size: 0.75em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 4em;
+}
+
+.light-btn:hover {
+    transition: all 1s ease; 
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 80%;
+}
+
+.red-btn {
+    border: 0.1em solid #9b1f1f;
+    background-color: #9b1f1f;
+    color: #ffffff;
+    padding: 0.75em 1.2em;
+    border-radius: 0.12em;
+    font-weight: 300;
+    font-size: 0.75em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.red-btn:hover {
+    background-color: #ffffff;
+    color: #9b1f1f;
+}
+
+/* Featured cuisines */
+
+#ck-cuisines {
+    background-image: url(../images/home-page/cuisine.jpg);
+}
+
+.menu-img {
+    width: 300;
+    height: 300;
+}
+
+/* use carousel  for displaying the cuisine items*/
+.wrapper {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 8em;
+    text-align: center;
+    background-color: #0000005d;
+}
+
+.carousel {
+    width: 90%;
+    margin: 0px auto;
+}
+
+.carousel h3 {
+    padding: 1.5em;
+    font-size: 1.5em;
+    font-family: 'Cormorant Upright', serif;
+}
+
+.slick-slide {
+    margin: 10px;
+    padding: 1em 1em 4em 1em;
+    height: auto;
+    background-color: #faf6f628;
+    border-radius: 8px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-dots {
+    position: static;
+}
+
+.wrapper .slick-dots li button:before {
+    font-size: 10px;
+    color: white;
+}
+
+.slick-next {
+    right: -50px;
+}
+
+.slick-prev {
+    left: -50px;
+}
+
+/* Awards */
+
+#ck-awards {
+    background-image: url(../images/home-page/awards.jpg);
+}
+
+.awards-list {
+    padding: 4em 2em 8em 2em;
+}
+
+.awards-list li {
+    display: inline;
+    padding: 2em;
+}
+
+.award-object {
+    width: 200px;
+}
+
+/* news */
+
+#ck-news {
+    background-image: url(../images/home-page/news.jpg);
+}
+
+.news-list {
+    padding: 4em 4em 3em 4em;
+}
+
+
+.news-list {
+    display: inline-block;
+
+}
+
+.news-container {
+    display: inline-block;
+    text-align: center;
+    line-height: 2;
+    font-size: 1em;
+    margin: 3em;
+}
+
+.news-container img {
+    width: 300px;
+    height: 200px;
+}
+
+.news-title {
+    letter-spacing: 2px;
+}
+
+.viewmore-container {
+    padding-bottom: 8em;
+}
+
+
+/* newsletter */
+
+#ck-newsletter {
+    background-image: url(../images/home-page/newsletter.jpg);
+}
+
+#newsletter-email {
+    font-size: 0.75em;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    letter-spacing: 2px;
+    width: 20em;
+    border: 0.2em solid #602a25;
+}
+
+.newsletter-form {
+    padding-top: 3em;
+    padding-bottom: 8em;
+}
+
+
+/* menu page */
+.circle-menu {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.dot {
+    height: 125px;
+    width: 125px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    align-items: center;
+    line-height: 115px;
+    text-align: center;
+    color: #9b1f1f;
+    text-transform: uppercase;
+    margin: 1em 2em;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 8px;
+}
+
+.menu-top-container {
+    background-image: url(../images/menu-page/common/cheers.png);
+}
+
+.menu-top-opacity {
+    background: rgba(31, 3, 3, 0.315);
+}
+
+#menu-section {
+    font-family: 'Cormorant Upright', serif;
+    font-size: 1.25em;
+    background-color: #0f0d0d;
+}
+
+.ck-menu-container .flex-container {
+    text-align: left;
+    gap: 4em;
+    padding: 2em 8em 2em 8em;
+}
+
+.ck-menu-container .ck-heading {
+    padding-top: 2em;
+}
+
+.menu-description h3 {
+    font-style: italic;
+}
+
+/* flex items */
+.menu-item-img {
+    flex: 3 0 0;
+}
+
+.menu-description {
+    flex: 3 0 0;
+}
+
+.item-price {
+    flex: 1 0 0;
+    letter-spacing: 2.5px;
+}
+
+#menu-drinks {
+    padding-bottom: 4em;
+}
+
+/* footer */
+
+footer {
+    padding: 2em 6em;
+}
+
+footer h4 {
+    font-size: 1.5em;
+}
+
+footer p {
+    font-size: 0.75em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.social-icons {
+    text-align: center;
+}
+
+.social-icons a {
+    padding: 24px 14px;
+}
+
+.ck-contact {
+    flex: 1 0 0;
+}
+
+.ck-logo {
+    flex: 1 0 0;
+}
+
+.ck-hours {
+    flex: 1 0 0;
+}
+
+#contact-container {
+    padding-bottom: 5em;
+    font-family: 'Cormorant Upright', serif;
+    font-size: 1.25em;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 768px) {
+
+    .logo-div {
+        flex: 1 0 100%;
+        order: 0;
+    }
+    
+    .nav-div {
+        flex: 1 0 100%;
+        order: 1;
+    }
+    
+    .make-reservation-div {
+        flex: 1 0 100%;
+        order: 2;
+    }
+    .top-nav li {
+        display: block;
+        padding-bottom: 5px;
+    }
+    .banner>h1 {
+        padding: 1em;
+        font-size: 3em;
+        font-family: 'Cormorant Upright', serif;
+    }
+    .ck-contact {
+        flex: 1 0 100%;
+        order: 0;
+    }
+    
+    .ck-logo {
+        flex: 1 0 100%;
+        order: 1;
+    }
+    
+    .ck-hours {
+        flex: 1 0 100%;
+        order: 2;
+    }
+}
